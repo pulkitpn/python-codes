@@ -12,7 +12,10 @@ while True:
     print("0 => Exit")
     
     ch = int(input("Enter the choice: "))
-    s = input("Enter the string: ")
+    if ch == 0:
+        break
+    else:
+        s = input("Enter the string: ")
     if ch == 1:
         print(len(s))
     elif ch == 2:
@@ -43,8 +46,7 @@ while True:
     elif ch == 10:
         s2 = input("enter the second string: ")
         print(s*s2)
-    elif ch ==0:
-        break
+    
 
 
 
