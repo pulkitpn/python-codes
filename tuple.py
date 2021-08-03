@@ -12,7 +12,10 @@ while True:
     print("0 => Exit")
     
     ch = int(input("Enter the choice: "))
-    t = tuple(input("Enter the tuple: "))
+    if ch == 0:
+        break
+    else:
+        t = tuple(input("Enter the tuple: "))
     if ch == 1:
         print(len(t))
     elif ch == 2:
@@ -41,5 +44,4 @@ while True:
         a = int(input("enter the start index: "))
         b = int(input("enter the end index: "))
         print(t[a:b])
-    elif ch == 0:
-        break
+    
